@@ -9,8 +9,6 @@
         - first time 12, 14, 15, 17, 18 => 12 is middle and doesn't match
         - second time 15, 17, 18 => 15 is smaller but not match
         - third time 17 => not a match, returns null
-#### In Progress
-- need to return count
 2. Adding a React UI
     - You will be testing the efficiency of 2 search algorithms, linear search and binary search using React.
     1. Linear search
@@ -22,7 +20,9 @@
         - Display how many tries it took to search for a particular item in the dataset using binary search. 
         - If the item is not in the dataset, provide a message and indicate how many searches it took to find that out.
 
-#### Next
+#### In Progress
 3. Find a book
     - Imagine you are looking for a book in a library with a Dewey Decimal index. How would you go about it? Can you express this process as a search algorithm? 
     - Implement your algorithm to find a book whose Dewey and book title is provided.
+
+#### Next
