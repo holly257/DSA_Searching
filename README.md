@@ -29,13 +29,19 @@
         - post order: 14, 19, 15, 27, 25, 79, 90, 91, 89, 35
     2. The post order traversal of a binary search tree is 5 7 6 9 11 10 8. What is its pre-order traversal?
         - pre-order: 8, 6, 5, 7, 10, 9 ,11
-
-#### In Progress
 5. Implement different tree traversals
     - Using your BinarySearchTree class from your previous lesson, create a binary search tree with the following dataset: 25 15 50 10 24 35 70 4 12 18 31 44 66 90 22. 
     - Then implement inOrder(), preOrder(), and postOrder() functions. Test your functions with the following datasets.
-
+#### In Progress
 #### Next
 6. Find the next commanding officer
+    - Suppose you have a tree representing a command structure of the Starship USS Enterprise. For example, Commander Riker is directly responsible for Worf and LaForge. People of the same rank are at the same level in the tree. However, to distinguish between people of the same rank, those with more experience are on the left and those with less on the right (i.e., experience decreases from left to right). Suppose a fierce battle with an enemy ensues. 
+    - Write a program that will take this tree of commanding officers and outlines the ranking officers in their ranking order so that if officers start dropping like flies, we know who is the next person to take over command.
 7. Max profit
+    - The share price for a company over a week's trading is as follows: [128, 97, 121, 123, 98, 97, 105]. 
+    - If you had to buy shares in the company on a particular day, and sell the shares on a subsequent day, write an algorithm to work out what the maximum profit you could make would be.
 8. Edd drop 
+    - This is a fun exercise to do - consider this optional after you are done with all the exercises above. 
+    - Imagine that you wanted to find the highest floor of a 100 story building that you could drop an egg from without the egg breaking. But you only have 2 eggs. 
+    - Write an algorithm to find out in the most efficient way which floors you should drop the eggs from. 
+    - After you have understood the question and made some attempts to solve the problem, go through this reading before you start coding: http://datagenetics.com/blog/july22012/index.html.

@@ -90,65 +90,65 @@ function App() {
     //so basically, you would make sure full dewey given, matches 
     //once you have that pending, you would search that collection of books to find the one with a matching title
     //unfortunately, in the subcategories the books are a-z by authors last name - so the title is less helpful but still useful
-    function deweyBinarySearch(array, dewey, title, start, end, count = 1) {
-        var start = start === undefined ? 0 : start;
-        var end = end === undefined ? array.length : end;
-        let values = [];
+    // function deweyBinarySearch(array, dewey, title, start, end, count = 1) {
+    //     var start = start === undefined ? 0 : start;
+    //     var end = end === undefined ? array.length : end;
+    //     let values = [];
 
-        if (start > end) {
-            return -1;
-        }
+    //     if (start > end) {
+    //         return -1;
+    //     }
 
-        const index = Math.floor((start + end) / 2);
-        const item = array[index];
+    //     const index = Math.floor((start + end) / 2);
+    //     const item = array[index];
 
-        if (item === dewey) {
-            //found dewey cat, so mow we take that collection and search it for the title, which would have to be a linear search
-            let foundBook;
+    //     if (item === dewey) {
+    //         //found dewey cat, so mow we take that collection and search it for the title, which would have to be a linear search
+    //         let foundBook;
 
-            for (let i = 0; i < item.length; i++) {
-                if (item[i] === text) {
-                    foundBook = item[i];
-                    return foundBook;
-                }
-            }
-            return foundBook;
-        } else if (item < dewey) {
-            count = count + 1;
-            return deweyBinarySearch(array, dewey, title, index + 1, end, count);
-        } else if (item > dewey) {
-            count = count + 1;
-            return deweyBinarySearch(array, dewey, title, start, index - 1, count);
-        }
-        if (start === end && item !== dewey) {
-            values = [count, null];
-            return values;
-        }
+    //         for (let i = 0; i < item.length; i++) {
+    //             if (item[i] === text) {
+    //                 foundBook = item[i];
+    //                 return foundBook;
+    //             }
+    //         }
+    //         return foundBook;
+    //     } else if (item < dewey) {
+    //         count = count + 1;
+    //         return deweyBinarySearch(array, dewey, title, index + 1, end, count);
+    //     } else if (item > dewey) {
+    //         count = count + 1;
+    //         return deweyBinarySearch(array, dewey, title, start, index - 1, count);
+    //     }
+    //     if (start === end && item !== dewey) {
+    //         values = [count, null];
+    //         return values;
+    //     }
 
-        values = [count, index];
+    //     values = [count, index];
 
-        if (values[1] === null) {
-            console.log('We have nothing in the category for: ' + dewey);
-            return null;
-        } 
-    }
+    //     if (values[1] === null) {
+    //         console.log('We have nothing in the category for: ' + dewey);
+    //         return null;
+    //     } 
+    // }
 
-    function findBook(dewey, title) {
-        e.preventDefault();
+    // function findBook(dewey, title) {
+    //     e.preventDefault();
 
         
-        let book = deweyBinarySearch(bookSet, dewey, title)
+    //     let book = deweyBinarySearch(bookSet, dewey, title)
 
-        console.log(book)
+    //     console.log(book)
 
-        if (book === null) {
-            console.log('Sorry, we do not have that book');
-            return;
-        } else {
-            console.log('item found: ' + book);
-            return;
-        }
-    }
+    //     if (book === null) {
+    //         console.log('Sorry, we do not have that book');
+    //         return;
+    //     } else {
+    //         console.log('item found: ' + book);
+    //         return;
+    //     }
+    // }
 
     return (
         <div className="App">
