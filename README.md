@@ -32,6 +32,8 @@
 
 #### In Progress
 5. Implement different tree traversals
+    - Using your BinarySearchTree class from your previous lesson, create a binary search tree with the following dataset: 25 15 50 10 24 35 70 4 12 18 31 44 66 90 22. 
+    - Then implement inOrder(), preOrder(), and postOrder() functions. Test your functions with the following datasets.
 
 #### Next
 6. Find the next commanding officer
