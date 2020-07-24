@@ -12,40 +12,46 @@ class BinaryTree extends React.Component {
         profit: [],
     };
 
-    //5. Implement different tree traversals
-    // componentDidMount() {
-    //     let bst = new BinarySearchTree();
-    //     let data = [25, 15, 50, 10, 24, 35, 70, 4, 12, 18, 31, 44, 66, 90, 22];
-    //     data.forEach(item => bst.insert(item));
-    //     this.setState({
-    //         tree: bst,
-    //     });
+    componentDidMount(){
+        this.implementTreeTraversals();
+        this.findNextCommandingOfficer();
+        this.findMaxProfit();
+    }
 
-    //     this.inOrderTrav(bst);
-    //     this.preOrderTrav(bst);
-    //     this.postOrderTrav(bst);
-    // }
+    //5. Implement different tree traversals
+    implementTreeTraversals() {
+        let bst = new BinarySearchTree();
+        let data = [25, 15, 50, 10, 24, 35, 70, 4, 12, 18, 31, 44, 66, 90, 22];
+        data.forEach(item => bst.insert(item));
+        this.setState({
+            tree: bst,
+        });
+
+        this.inOrderTrav(bst);
+        this.preOrderTrav(bst);
+        this.postOrderTrav(bst);
+    }
 
     //6. Find the next commanding officer
-    // componentDidMount() {
-    //     let bst = new BinarySearchTree();
+    findNextCommandingOfficer() {
+        let bst = new BinarySearchTree();
 
-    //     bst.insert(10, 'Captain Picard')
-    //     bst.insert(6, 'Commander Riker')
-    //     bst.insert(4, 'Lt. Cmdr. Worf')
-    //     bst.insert(8, 'Lt. Cmdr. LaForge')
-    //     bst.insert(3, 'Lieutenant sercurity-officer')
-    //     bst.insert(12, 'Commander Data')
-    //     bst.insert(15, 'Lt. Cmdr. Crusher')
-    //     bst.insert(13, 'Lieutenant Selar')
+        bst.insert(10, 'Captain Picard')
+        bst.insert(6, 'Commander Riker')
+        bst.insert(4, 'Lt. Cmdr. Worf')
+        bst.insert(8, 'Lt. Cmdr. LaForge')
+        bst.insert(3, 'Lieutenant sercurity-officer')
+        bst.insert(12, 'Commander Data')
+        bst.insert(15, 'Lt. Cmdr. Crusher')
+        bst.insert(13, 'Lieutenant Selar')
 
-    //     this.setState({
-    //         tree: bst,
-    //     });
+        this.setState({
+            tree: bst,
+        });
 
-    //     this.bfs(bst)
+        this.bfs(bst)
 
-    // }
+    }
 
     inOrderTrav = tree => {
         //L, root, R
@@ -107,7 +113,7 @@ class BinaryTree extends React.Component {
     }
 
     //7. Max Profit
-    componentDidMount() {
+    findMaxProfit() {
         let profitTree = new BinarySearchTree();
 
         profitTree.insert(128, 'Monday');
