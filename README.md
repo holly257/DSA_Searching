@@ -35,13 +35,12 @@
 6. Find the next commanding officer
     - Suppose you have a tree representing a command structure of the Starship USS Enterprise. For example, Commander Riker is directly responsible for Worf and LaForge. People of the same rank are at the same level in the tree. However, to distinguish between people of the same rank, those with more experience are on the left and those with less on the right (i.e., experience decreases from left to right). Suppose a fierce battle with an enemy ensues. 
     - Write a program that will take this tree of commanding officers and outlines the ranking officers in their ranking order so that if officers start dropping like flies, we know who is the next person to take over command.
-#### In Progress
-#### Next
-
 7. Max profit
     - The share price for a company over a week's trading is as follows: [128, 97, 121, 123, 98, 97, 105]. 
     - If you had to buy shares in the company on a particular day, and sell the shares on a subsequent day, write an algorithm to work out what the maximum profit you could make would be.
-8. Edd drop 
+
+#### Next
+8. Edd drop - optional
     - This is a fun exercise to do - consider this optional after you are done with all the exercises above. 
     - Imagine that you wanted to find the highest floor of a 100 story building that you could drop an egg from without the egg breaking. But you only have 2 eggs. 
     - Write an algorithm to find out in the most efficient way which floors you should drop the eggs from. 
